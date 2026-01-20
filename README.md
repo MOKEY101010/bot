@@ -356,3 +356,15 @@ client.on('interactionCreate', async interaction => {
 
 // Login
 client.login('MTQ2MzI5MTA2MjAyMDg3MDM2OA.Gx0ral.eiUh063y1Lyklumg-PVs63IOLiMB6RJIc9PD7M');
+const express = require("express");
+const app = express();
+
+app.get("/", (req, res) => {
+  res.send("BELGA E-SPORTS BOT ONLINE");
+});
+
+const PORT = process.env.PORT || 8000;
+app.listen(PORT, () => {
+  console.log("Servidor web ativo");
+});
+
